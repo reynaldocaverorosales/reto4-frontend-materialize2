@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+
+  <title>prueba</title>
+  
+  
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.css"> 
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style type="text/css">
+  
+  .titulo-tiempo{
+    text-align: center;
+    color: red;
+  }
+  .ul-opcion{
+    line-height: 30px;
+    
+    /*outline:1px solid red;*/
+
+  }
+
+  .ul-opcion > li{
+    
+    /*outline:1px solid green;*/
+    box-shadow: 3px 0 rgba(0,0,0,0.5) inset;
+    margin-bottom: 5px;
+    padding-left: 1.5em;
+    -webkit-transition:all .6s;
+    transition:all .6s;
+  }
+
+
+  .ul-opcion>li:hover{
+    box-shadow: 25em 0 rgba(0,0,0,0.5) inset;
+    color: #FFF;
+
+
+  }
+
+  .nav-wrapper>a>img{
+    width: 55px;
+    border-radius: 50%;
+  }
+
+  
+
+
+  .contenedor{
+    padding-top: 70px;
+
+  }
+  #layout-3{
+    
+    width: 25%;
+  }
+
+  .nav-responsive{
+    
+  }
+
+  #layout-9{
+    
+  }
+
+
+  @media screen and (max-width: 601px){
+    #layout-3{
+    
+    width: 100%;
+  }
+  }
+
+
+
+
+  </style>
+
+</head>
+<body>
+  <!--HEADER-->
+
+      <header >
+          <nav>
+            <div class="nav-wrapper" >
+              
+                  <a href="#!" class="brand-logo left">REY</a>
+                  <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                  </ul>
+                  <ul class="side-nav" id="mobile-demo">
+
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                  </ul>
+            </div>
+          </nav>
+      </header>
+      <section class="contenedor">
+        
+
+        <!-- CUERPO  -->
+         <div class="row">
+         <!-- NAV LATERAL -->
+              <!-- LAYOUT DE M3 -->
+                <div class="col s12 m3" id="layout-3">
+                  <section class="nav-responsive">
+                          <ul class="collapsible" data-collapsible="accordion">
+                              <li>
+                                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Style</div>
+                                <div class="collapsible-body">
+                                <ul class="ul-opcion">
+                                    <li><a href="">Color</a></li>
+                                    <li><a href="">Icons</a></li>
+                                    <li><a href="">Imagery</a></li>
+                                    <li><a href="">Typography</a></li>
+                                    <li><a href="">Writing</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="collapsible-header"><i class="material-icons">place</i>Layout</div>
+                                <div class="collapsible-body">
+                                  <ul class="ul-opcion">
+                                    <li><a href="">Principles</a></li>
+                                    <li><a href="">Struture</a></li>
+                                    <li><a href="">Responsive UI</a></li>
+                                    <li><a href="">Metrics</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="collapsible-header"><i class="material-icons">whatshot</i>Components</div>
+                                <div class="collapsible-body">
+                                  <ul class="ul-opcion">
+                                    <li><a href="#">Cars</a></li>
+                                    <li><a href="#">Button</a></li>
+                                    <li><a href="#">List</a></li>
+                                    <li><a href="#">Menus</a></li>
+                                    <li><a href="#">Sliders</a></li>
+                                    <li><a href="#">Tabs</a></li>
+                                  </ul>
+                                </div>
+                              </li>
+                              <li>
+                                <div class="collapsible-header"><i class="material-icons">forward_30</i>Patterns</div>
+                                <div class="collapsible-body">
+                                  <ul class="ul-opcion">
+                                    <li>Error</li>
+                                    <li>Navigation</li>
+                                  </ul>
+                                </div>
+                              </li>
+                          </ul>
+                  </section>
+                </div>  
+            
+
+          
+            <!-- MAIN PRINCIPAL  -->
+              
+            
+              <main class="col s12 m9" id="layout-9">
+                <!-- ARTICULO 1  -->
+                <article>
+                  <!-- ARTICULO 1  HEADER -->
+                    <header class="titulo-tiempo">
+                        <h1>Material design</h1>
+                        <i class="material-icons">schedule</i><time>: 10-01-2016</time>
+                    </header>
+                    <!-- ARTICULO 1  contenido -->
+                    <div class="card">
+                          <div class="card-image waves-effect waves-block waves-light">
+                              <img style="-webkit-user-select: none;" src="https://material-design.storage.googleapis.com/publish/material_v_4/material_ext_publish/0Bx4BSt6jniD7UXpQYWltVjNPWXc/whatismaterial_environment_3d.png" width="100" height="300">
+                              
+                          </div>
+                          <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Material properties<i class="material-icons right">more_vert</i></span>
+                     
+                              <!-- ARTICULO 1  relleno cara posterior -->
+                          </div>
+                          <div class="card-reveal">
+                              <span class="card-title grey-text text-darken-4">Material properties<i class="material-icons right">close</i></span>
+                              <p>Material has certain immutable characteristics and inherent behaviors. Understanding these qualities will help you manipulate material in a way that’s consistent with the vision of material design.</p>
+                              <p>The material environment is a 3D space, which means all objects have x, y, and z dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the positive z-axis extending towards the viewer. Every sheet of material occupies a single position along the z-axis and has a standard 1dp thickness, equivalent to one pixel of thickness on screens with a pixel density of 160.</p>
+                          </div>
+                    </div>
+                      <!-- ARTICULO 1 FOOTER -->
+                    <footer>
+                              <a href="#">Physical properties</a>,
+                               <a href="#">Transforming material</a>,
+                               <a href="#">Movement of material</a>
+
+                    </footer>
+                    <hr>
+                    <!-- DIV COMENTARIOS -->
+                    <div class="comentarios">
+
+                            <div class="card-panel hoverable"> 
+                                        <ul class="collapsible" data-collapsible="accordion">
+                                            <li>
+                                              <div class="collapsible-header"><i class="material-icons">thumb_up</i><time>Enviado el 13-01-2016 a las 5:35 pm</time></div>
+                                              <div class="collapsible-body">
+                                                <ul>
+                                                  <!-- ARTIIULO 1 ANIDANDO OTRO ARTICULO -->
+                                                  <article>
+                                                      <center><time>Enviado el 13-01-2016 a las 5:35 pm</time></center>
+                                                    <p>Este es un muy buen comentario sobre el artículo.</p>
+                                                  </article>
+                                                  
+                                                </ul>
+                                              </div>
+                                            </li>
+                                            <li>
+                                              <div class="collapsible-header"><i class="material-icons">thumb_up</i><time>Enviado el 13-01-2016 a las 5:35 pm</time></div>
+                                              <div class="collapsible-body">
+                                                <ul>
+                                                <!-- ARTIIULO 1 ANIDANDO OTRO ARTICULO -->
+                                                  <article>
+                                                    <center><time>Enviado el 13-01-2016 a las 5:35 pm</time></center>
+                                                    <p>Este es un muy buen comentario sobre el artículo.</p>
+                                                  </article>
+                                                </ul>
+                                              </div>
+                                            </li>
+                                        </ul>  
+                            </div>
+                            <div class="row">
+                              <div class="input-field col s12">
+                                <input id="input_text" type="text" length="100">
+                                <label for="input_text">Escribe tu comentario</label>
+                              </div>
+                            </div>
+                        
+                            <div class="container">
+                  
+                                  <div class="row">
+                                            <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                                            <i class="material-icons right">send</i>
+                                            </button>
+                                            
+                                            <a class="waves-effect waves-orange btn modal-trigger" href="#modal1">Suscribirse</a>
+                                            <div id="modal1" class="modal modal-fixed-footer">
+                                              <div class="modal-content">
+                                                    <h2>Formulario de Suscripcion</h2>
+                                                  <form class="col s12">
+                                                    <div class="row">
+                                                      <div class="input-field col s6">
+                                                        <input id="last_name" type="text" class="validate">
+                                                        <label for="first_name">Nombre</label>
+                                                      </div>
+                                                      <div class="input-field col s6">
+                                                        <input id="last_name" type="text" class="validate">
+                                                        <label for="last_name">Apellidos</label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="input-field col s12">
+                                                        <input id="correo" type="text" class="validate">
+                                                        <label for="correo">Correo Electronico</label>
+                                                      </div>
+                                                    </div>
+                                                    <div class="row">
+                                                      <div class="input-field col s12">
+                                                        <input id="telefono" type="text" class="validate">
+                                                        <label for="telefono">Telefono</label>
+                                                      </div>
+                                                    </div>
+                                                  </form>
+                                                  </div>
+                                                      <div class="modal-footer">
+                                                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+                                                          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Aceptar</a>
+
+                                                  </div>
+                                              
+                                            </div>
+                          
+                                  </div>
+                            </div>
+                    </div>
+                </article>
+                <!-- ARTICULO 2 -->
+                 <article>
+                            <header class="titulo-tiempo">
+                                <h2>Layout</h2>
+                                <i class="material-icons">schedule</i><time>09-01-2016</time>
+                            </header>
+                            <div class="card">
+                                <div class="card-image waves-effect waves-block waves-light">
+                                    <img style="-webkit-user-select: none;" src="imagenes/html5.jpg" width="100" height="300">
+                                    
+                                </div>
+                                <div class="card-content">
+                                 <span class="card-title activator grey-text text-darken-4">Layout<i class="material-icons right">more_vert</i></span>
+                                  
+                                </div>
+                                <div class="card-reveal">
+                                  <span class="card-title grey-text text-darken-4">Material properties<i class="material-icons right">close</i></span>
+                                  <p>Material has certain immutable characteristics and inherent behaviors. Understanding these qualities will help you manipulate material in a way that’s consistent with the vision of material design.</p>
+                                  <p>The material environment is a 3D space, which means all objects have x, y, and z dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the positive z-axis extending towards the viewer. Every sheet of material occupies a single position along the z-axis and has a standard 1dp thickness, equivalent to one pixel of thickness on screens with a pixel density of 160.</p>
+                                </div>
+                            </div>
+                            <!-- ARTICULO 2 FOOTER -->
+                                    <footer>
+                                            <a href="#">Physical properties</a>,
+                                             <a href="#">Transforming material</a>,
+                                             <a href="#">Movement of material</a>
+
+                                    </footer>
+                                <hr>
+                                <div class="comentarios">
+                                    <div class="card-panel hoverable"> 
+                                            <ul class="collapsible" data-collapsible="accordion">
+                                                  <li>
+                                                      <div class="collapsible-header"><i class="material-icons">thumb_up</i><time>Enviado el 13-01-2016 a las 5:35 pm</time></div>
+                                                      <div class="collapsible-body">
+                                                        <ul>
+                                                          <!-- ARTIIULO 2 ANIDANDO OTRO ARTICULO -->
+                                                          <article>
+                                                              <center><time>Enviado el 13-01-2016 a las 5:35 pm</time></center>
+                                                            <p>Este es un muy buen comentario sobre el artículo.</p>
+                                                          </article>
+                                                          
+                                                        </ul>
+                                                      </div>
+                                                  </li>
+                                                  <li>
+                                                      <div class="collapsible-header"><i class="material-icons">thumb_up</i><time>Enviado el 13-01-2016 a las 5:35 pm</time></div>
+                                                      <div class="collapsible-body">
+                                                        <ul>
+                                                        <!-- ARTIIULO 2 ANIDANDO OTRO ARTICULO -->
+                                                          <article>
+                                                            <center><time>Enviado el 13-01-2016 a las 5:35 pm</time></center>
+                                                            <p>Este es un muy buen comentario sobre el artículo.</p>
+                                                          </article>
+                                                        </ul>
+                                                      </div>
+                                                  </li>
+                                            </ul>
+                  
+                                    </div>
+                                    <div class="row">
+                                            <div class="input-field col s12">
+                                              <input id="input_text" type="text" length="100">
+                                              <label for="input_text">Escribe tu comentario</label>
+                                            </div>
+                                    </div>
+                                    
+                                    <div class="container">
+                              
+                                              <div class="row">
+                                                        <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                                                        <i class="material-icons right">send</i>
+                                                        </button>
+                                                        
+                                                        <a class="waves-effect waves-orange btn modal-trigger" href="#modal1">Suscribirse</a>
+                                                        <div id="modal1" class="modal modal-fixed-footer">
+                                                          <div class="modal-content">
+                                                                <h2>Formulario de Suscripcion</h2>
+                                                              <form class="col s12">
+                                                                <div class="row">
+                                                                  <div class="input-field col s6">
+                                                                    <input id="last_name" type="text" class="validate">
+                                                                    <label for="first_name">Nombre</label>
+                                                                  </div>
+                                                                  <div class="input-field col s6">
+                                                                    <input id="last_name" type="text" class="validate">
+                                                                    <label for="last_name">Apellidos</label>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="input-field col s12">
+                                                                    <input id="correo" type="text" class="validate">
+                                                                    <label for="correo">Correo Electronico</label>
+                                                                  </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                  <div class="input-field col s12">
+                                                                    <input id="telefono" type="text" class="validate">
+                                                                    <label for="telefono">Telefono</label>
+                                                                  </div>
+                                                                </div>
+                                                              </form>
+                                                              </div>
+                                                                  <div class="modal-footer">
+                                                                    <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+                                                                      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Aceptar</a>
+
+                                                              </div>
+                                                          
+                                                        </div>
+                                      
+                                              </div>
+                                    </div>
+                                </div>
+                 </article>
+                <!-- ARTICULO 3 -->
+                <article >
+                          <header class="titulo-tiempo">
+                              <h2>Animation</h2>
+                              <i class="material-icons">schedule</i><time>09-01-2016</time>
+                          </header>
+                          <div class="card">
+                              <div class="card-image waves-effect waves-block waves-light">
+                              <img style="-webkit-user-select: none;" src="imagenes/css.jpg" width="100" height="300">
+                              
+                              </div>
+                              <div class="card-content">
+                               <span class="card-title activator grey-text text-darken-4">Authentic motion<i class="material-icons right">more_vert</i></span>
+                                
+                              </div>
+                              <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Authentic motion<i class="material-icons right">close</i></span>
+                                <p>Just as the shape of an object indicates how it might behave, watching an object move demonstrates whether it’s light, heavy, flexible, rigid, small or large. In the world of material design, motion describes spatial relationships, functionality, and intention with beauty and fluidity.</p>
+                                <p>The material environment is a 3D space, which means all objects have x, y, and z dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the positive z-axis extending towards the viewer. Every sheet of material occupies a single position along the z-axis and has a standard 1dp thickness, equivalent to one pixel of thickness on screens with a pixel density of 160.</p>
+                              </div>
+                          </div>
+                          <!-- ARTICULO 3 FOOTER -->
+                          <footer>
+                                   <a href="#">Physical properties</a>,
+                                   <a href="#">Transforming material</a>,
+                                   <a href="#">Movement of material</a>
+
+                          </footer>
+                          <hr>
+                          <div class="comentarios">
+                              <div class="card-panel hoverable"> 
+                                  
+                                      
+                                  <ul class="collapsible" data-collapsible="accordion">
+                                    <li>
+                                      <div class="collapsible-header"><i class="material-icons">thumb_up</i><time>Enviado el 13-01-2016 a las 5:35 pm</time></div>
+                                      <div class="collapsible-body">
+                                        <ul>
+                                        <!-- ARTIIULO 3 ANIDANDO OTRO ARTICULO -->
+                                          <article>
+                                              <center><time>Enviado el 13-01-2016 a las 5:35 pm</time></center>
+                                            <p>Este es un muy buen comentario sobre el artículo.</p>
+                                          </article>
+                                          
+                                        </ul>
+                                      </div>
+                                    </li>
+                                    <li>
+                                      <div class="collapsible-header"><i class="material-icons">thumb_up</i><time>Enviado el 13-01-2016 a las 5:35 pm</time></div>
+                                      <div class="collapsible-body">
+                                        <ul>
+                                        <!-- ARTIIULO 3 ANIDANDO OTRO ARTICULO -->
+                                          <article>
+                                            <center><time>Enviado el 13-01-2016 a las 5:35 pm</time></center>
+                                            <p>Este es un muy buen comentario sobre el artículo.</p>
+                                          </article>
+                                        </ul>
+                                      </div>
+                                    </li>
+                                  </ul> 
+
+                              </div>
+                              <div class="row">
+                                    <div class="input-field col s12">
+                                      <input id="input_text" type="text" length="100">
+                                      <label for="input_text">Escribe tu comentario</label>
+                                    </div>
+                              </div>
+
+                                    <!--BOTON -->
+
+                                  <div class="container">
+                        
+                                        <div class="row">
+                                                  <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
+                                                  <i class="material-icons right">send</i>
+                                                  </button>
+                                                  
+                                                  <a class="waves-effect waves-orange btn modal-trigger" href="#modal1">Suscribirse</a>
+                                                  <div id="modal1" class="modal modal-fixed-footer">
+                                                    <div class="modal-content">
+                                                          <h2>Formulario de Suscripcion</h2>
+                                                        <form class="col s12">
+                                                          <div class="row">
+                                                            <div class="input-field col s6">
+                                                              <input id="last_name" type="text" class="validate">
+                                                              <label for="first_name">Nombre</label>
+                                                            </div>
+                                                            <div class="input-field col s6">
+                                                              <input id="last_name" type="text" class="validate">
+                                                              <label for="last_name">Apellidos</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="row">
+                                                            <div class="input-field col s12">
+                                                              <input id="correo" type="text" class="validate">
+                                                              <label for="correo">Correo Electronico</label>
+                                                            </div>
+                                                          </div>
+                                                          <div class="row">
+                                                            <div class="input-field col s12">
+                                                              <input id="telefono" type="text" class="validate">
+                                                              <label for="telefono">Telefono</label>
+                                                            </div>
+                                                          </div>
+                                                        </form>
+                                                        </div>
+                                                            <div class="modal-footer">
+                                                              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Cancelar</a>
+                                                                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Aceptar</a>
+
+                                                        </div>
+                                                    
+                                                  </div>
+                                
+                                        </div>
+                                  </div>
+                              
+                          </div>
+                </article>
+              </main>
+            
+            
+         </section>
+
+            <!--FOOTER-->
+           <footer class="page-footer">
+              <div class="container">
+                <div class="row">
+                  <div class="col l6 s12">
+                    <h5 class="white-text">Cursos online</h5>
+                    <p class="grey-text text-lighten-4">tu puedes acceder a nuestros servicios gratis.</p>
+                  </div>
+                  <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Servicios</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!">github</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Heroku</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Openshit</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Materialize</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">google</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer-copyright">
+                <div class="container">
+                © 2016 Copyright Text
+                <a class="grey-text text-lighten-4 right" href="#!">facebook</a>
+                </div>
+              </div>
+            </footer>
+        
+          
+
+               <script src="js/jquery-2.1.4.js"></script>
+               <script src="js/materialize.js"></script>
+               <script type="text/javascript">
+                $(document).ready(function (){
+                $(".button-collapse").sideNav();
+                $('.modal-trigger').leanModal();
+
+               });
+                
+               </script>
+</body>
+</html>
+
+
